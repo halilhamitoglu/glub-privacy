@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glub - Delete Account</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #041329;
+            color: #e0e0e0;
+            line-height: 1.7;
+            padding: 20px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo h1 {
+            font-size: 2.2em;
+            background: linear-gradient(135deg, #00E5FF, #C3F5FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 900;
+        }
+        .card {
+            background: rgba(17, 32, 54, 0.9);
+            border: 1px solid rgba(0, 229, 255, 0.1);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 24px;
+        }
+        h2 {
+            color: #00E5FF;
+            font-size: 1.4em;
+            margin-bottom: 16px;
+        }
+        h3 {
+            color: #ff6b6b;
+            font-size: 1.1em;
+            margin-bottom: 12px;
+        }
+        p, li {
+            color: #b0c4d8;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+        .warning {
+            background: rgba(255, 107, 107, 0.1);
+            border: 1px solid rgba(255, 107, 107, 0.3);
+            border-radius: 12px;
+            padding: 16px;
+            margin: 20px 0;
+        }
+        .warning p {
+            color: #ff6b6b;
+            font-weight: 600;
+        }
+        .steps {
+            counter-reset: step;
+        }
+        .steps li {
+            counter-increment: step;
+            list-style: none;
+            position: relative;
+            padding-left: 36px;
+            margin-bottom: 14px;
+        }
+        .steps li::before {
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            background: rgba(0, 229, 255, 0.15);
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 24px;
+            font-size: 0.8em;
+            color: #00E5FF;
+            font-weight: 700;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .contact a {
+            color: #00E5FF;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #4a6a8a;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>Glub</h1>
+            <p style="color: #4a6a8a;">Account & Data Deletion</p>
+        </div>
+
+        <div class="card">
+            <h2>Delete Your Account</h2>
+            <p>You can delete your Glub account and all associated data at any time. This page explains what happens when you delete your account and how to do it.</p>
+        </div>
+
+        <div class="card">
+            <h2>How to Delete Your Account</h2>
+
+            <h3>Option 1: From the App</h3>
+            <ol class="steps">
+                <li>Open Glub and go to <strong>Settings</strong> (gear icon in the bottom navigation)</li>
+                <li>Find the <strong>"Delete Account"</strong> button below your account info</li>
+                <li>Confirm the deletion in the dialog</li>
+                <li>Your account and all data will be deleted immediately</li>
+            </ol>
+
+            <h3>Option 2: Via Email</h3>
+            <p>If you cannot access the app, send an email to <a href="mailto:halilhamitoglu100@gmail.com" style="color: #00E5FF;">halilhamitoglu100@gmail.com</a> with the subject line <strong>"Delete My Glub Account"</strong>. Include the email address associated with your account. We will process your request within 7 business days.</p>
+        </div>
+
+        <div class="card">
+            <h2>What Data Gets Deleted</h2>
+            <p>When you delete your account, the following data is permanently removed from our servers:</p>
+            <ul>
+                <li><strong>Account information</strong> — your name, email, and profile</li>
+                <li><strong>Tank data</strong> — all your aquarium tanks and their settings</li>
+                <li><strong>Fish inventory</strong> — all fish records across all tanks</li>
+                <li><strong>Plant inventory</strong> — all plant records across all tanks</li>
+                <li><strong>Water parameters</strong> — all water test history and measurements</li>
+                <li><strong>Reminders</strong> — all scheduled maintenance reminders</li>
+            </ul>
+
+            <div class="warning">
+                <p>This action is permanent and cannot be undone. Please export your data before deleting your account if you want to keep a copy.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Data Retention</h2>
+            <p>Upon account deletion:</p>
+            <ul>
+                <li>All user data is deleted from our servers <strong>immediately</strong></li>
+                <li>Crash reports and analytics data (collected by Firebase Crashlytics) are anonymized and cannot be linked back to your account</li>
+                <li>Data stored locally on your device is not automatically deleted — you can uninstall the app or clear app data to remove it</li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <p>Questions? Contact us at <a href="mailto:halilhamitoglu100@gmail.com">halilhamitoglu100@gmail.com</a></p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 HS Works. All rights reserved.</p>
+            <p style="margin-top: 8px;"><a href="index.html" style="color: #4a6a8a;">Privacy Policy</a></p>
+        </div>
+    </div>
+</body>
+</html>
