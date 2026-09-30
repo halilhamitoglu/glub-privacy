@@ -71,7 +71,7 @@
 <body>
     <div class="container">
         <h1>Glub Privacy Policy</h1>
-        <p class="subtitle">Last updated: April 16, 2026</p>
+        <p class="subtitle">Last updated: September 30, 2026</p>
 
         <h2>1. Introduction</h2>
         <p>Glub is an aquarium management application developed by HS Works ("we", "us", "our"). We respect your privacy and are committed to protecting your personal data. This privacy policy explains what information we collect, how we use it, and your rights regarding your data.</p>
@@ -107,7 +107,7 @@
                 <th>Purpose</th>
             </tr>
             <tr>
-                <td>Crash logs, device model, OS version</td>
+                <td>Crash and error reports, device model, OS version, app version</td>
                 <td>Firebase Crashlytics</td>
                 <td>App stability and bug fixing</td>
             </tr>
@@ -116,8 +116,24 @@
                 <td>Google AdMob</td>
                 <td>Displaying advertisements</td>
             </tr>
+            <tr>
+                <td>App usage events (screens viewed, features used, in-app species search terms), a pseudonymous app user ID (our internal account ID, not your name or email), whether you use guest mode or a signed-in account, premium status, a random app-installation ID, app language, app version, device model, OS version</td>
+                <td>Firebase Analytics (Google)</td>
+                <td>Understanding which features are used and improving the app</td>
+            </tr>
+            <tr>
+                <td>Push notification token, platform, app version, app language, device model, OS version, last-seen time</td>
+                <td>Firebase Cloud Messaging (Google) and our database (Supabase)</td>
+                <td>Delivering the reminder notifications you set up</td>
+            </tr>
+            <tr>
+                <td>App configuration requests (app version, device language, country, time zone, OS version)</td>
+                <td>Firebase Remote Config (Google)</td>
+                <td>Turning features on or off and adjusting ad frequency</td>
+            </tr>
         </table>
-        <p>We do not use any analytics SDKs. No browsing activity, location, contacts, or other sensitive data is collected.</p>
+        <p>Analytics data is used only in aggregate to improve Glub. We do not sell it and we do not use it to identify you personally. Google's services listed above (Firebase and AdMob) may derive an approximate location, such as your country or city, from your IP address. We do not collect your precise location, contacts, web browsing history, or other sensitive data.</p>
+        <p>To deliver the reminder notifications you set up, the titles and texts of those reminders are queued on our server until they are delivered to your device.</p>
 
         <h2>3. How We Use Your Information</h2>
         <ul>
@@ -126,6 +142,9 @@
             <li>To display advertisements in the free version</li>
             <li>To diagnose and fix crashes and bugs</li>
             <li>To authenticate your identity when signing in</li>
+            <li>To understand which features are used and to improve the app</li>
+            <li>To send the reminder notifications you set up</li>
+            <li>To turn app features on or off and adjust ad frequency</li>
         </ul>
         <p>We do <strong>not</strong> sell, rent, or trade your personal data to any third party.</p>
 
@@ -137,8 +156,9 @@
         <ul>
             <li><strong>Google Sign-In:</strong> Authentication — <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
             <li><strong>Supabase:</strong> Cloud data storage and sync — <a href="https://supabase.com/privacy">Supabase Privacy Policy</a></li>
-            <li><strong>Google AdMob:</strong> Advertisement display — <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+            <li><strong>Google AdMob:</strong> Advertisement display and, in the EEA/UK, the consent form for personalized ads (Google User Messaging Platform) — <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
             <li><strong>Firebase Crashlytics:</strong> Crash reporting — <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a></li>
+            <li><strong>Firebase Analytics, Firebase Cloud Messaging and Firebase Remote Config (Google):</strong> App analytics, push notifications and configuration — <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
         </ul>
 
         <h2>6. Data Sharing</h2>
@@ -154,6 +174,11 @@
                 <td>Authentication and data sync</td>
             </tr>
             <tr>
+                <td>Aquarium data (tanks, fish, plants, water parameters, reminders), only when you sign in</td>
+                <td>Supabase</td>
+                <td>Cloud backup and cross-device sync</td>
+            </tr>
+            <tr>
                 <td>Crash reports</td>
                 <td>Google (Firebase)</td>
                 <td>App stability improvement</td>
@@ -162,6 +187,21 @@
                 <td>Advertising ID, device info</td>
                 <td>Google (AdMob)</td>
                 <td>Ad serving and measurement</td>
+            </tr>
+            <tr>
+                <td>App usage events (including in-app species search terms) and pseudonymous user ID</td>
+                <td>Google (Firebase Analytics)</td>
+                <td>Aggregate app analytics</td>
+            </tr>
+            <tr>
+                <td>Push notification token and device details (platform, app version, language, device model, OS version)</td>
+                <td>Google (Firebase Cloud Messaging) and Supabase</td>
+                <td>Delivering reminder notifications</td>
+            </tr>
+            <tr>
+                <td>App version, device language, country, time zone, OS version</td>
+                <td>Google (Firebase Remote Config)</td>
+                <td>Delivering app configuration</td>
             </tr>
         </table>
         <p>No data is shared for purposes beyond those listed above.</p>
@@ -172,7 +212,7 @@
             <li><strong>Use the app without an account:</strong> Guest mode requires no personal information</li>
             <li><strong>Delete your account and all data:</strong> Use the "Delete Account" button in Settings, or email us. All data is permanently removed from our servers immediately</li>
             <li><strong>Export your data:</strong> Use the Export feature in the app to download your aquarium data as JSON</li>
-            <li><strong>Opt out of personalized ads:</strong> Adjust your advertising preferences in your device settings</li>
+            <li><strong>Opt out of personalized ads:</strong> In regions where consent is required (e.g. EEA/UK), you can accept or decline personalized ads in the consent form shown by the app. You can also adjust your advertising preferences in your device settings</li>
         </ul>
         <p>For detailed instructions on account deletion, visit our <a href="delete-account.html">Account Deletion page</a>.</p>
 
@@ -181,6 +221,7 @@
             <li>Account and aquarium data is retained as long as your account is active</li>
             <li>Upon account deletion, all user data is removed from our servers <strong>immediately</strong></li>
             <li>Crash reports are anonymized and cannot be linked back to your account after deletion</li>
+            <li>Analytics data is linked to you only through a pseudonymous app user ID, never through your name or email. When you delete your account, that ID is deleted from our servers, so we can no longer link the analytics data to you</li>
             <li>Local data on your device is not automatically deleted — uninstall the app or clear app data to remove it</li>
         </ul>
 
